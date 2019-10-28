@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JS Cards</title>
+    <meta name="robots" content="noindex,nofollow" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style type="text/css">
+		* {padding:0; margin:0;}
+		html {background-color:#ccc;}
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+			max-width:960px; /* keeps from getting too large on wide screen */
+			width:90%; /* shrink to fit screen */
+			margin:auto; /* center in html element */
+			background-color:#fff;
+			padding:20px;
+			min-height:100%; /* keeps from getting too large on wide screen */
+            overflow:auto; /* be sure to enclose all items */
+			}
+		img.flexible {
+			float:right;
+			display:inline-block;
+			padding:20px;
+			max-width:300px; /* actual size of image */
+			width:33%; /* approximate size taken on screen in maximum view */
+		}
+		p {margin:10px;}
+		h1,h2,h3,h4,h5,h6{
+			font-weight:normal;
+			margin:10px;
+			}
+		h1.masthead {margin-top:0;}
+		footer {
+			text-align:center;
+			clear:both; /* ride below all items */
+			}
+		nav{
+			text-align:center; /* centers the nav */
+		}
+		
+		nav ul {
+				list-style:none; /* removes the bullets */
+			}
+		nav ul li
+			{
+				display:inline-block; /* makes horizontal, but able to declare margins */
+				margin:0 2%; /* margin left-right, gets smaller as necessary */
+			}
+		nav a:hover{
+			text-decoration: none;
+		}	
+    </style>
+   
+    <!--[if ltIE9]>
+       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+     <![endif]-->
+</head>
+<body>
+	<header role="banner">
+		<h1 class="masthead">JS Cards</h1>
+	</header>
+    <main role="main">
+	 <header><h3>Robo JS Dealer</h3></header>
+        <p>This started off as a homework assignment that required doing calculations of blackjacks scores.  I was unable to find an open source way to shuffle and display cards, so I made this.</p>
+        <p>This page will let you draw 3 cards and evaluate those cards as a blackjack hand, or 
+        allow you to draw 5 cards from a shuffled deck.</p>
+        <p>The shuffled deck, once exhausted, will re-shuffle and continue.</p>
+        <p>The cards come from here: <a href="https://opengameart.org/content/playing-cards-vector-png">https://opengameart.org/content/playing-cards-vector-png</a></p>
+        <p>Repo where the code & cards reside: xxxx</p>
+        <div style="float:left; width:15%">
+            <p><button onclick="playBlackJack()">Play Black Jack</button></p>
+            <p><button onclick="drawCards(5)">Draw 5 Cards</button></p>
+        </div>    
+
+
+<div id="description" style="float:left; width:40%"></div>        
+<div id="graphics" style="position:relative; float:left; width:40%"></div>
+<div id="output" style="min-height:300px"></div>	
+     </main>
+    <footer>
+      <small>&copy; 2018, Bill Newman, released under <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 license</a>. ~
+      <a href="http://validator.w3.org/check/referer" target="_blank">Valid HTML</a> ~
+      <a href="http://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Valid CSS</a>
+      </small>
+        <script src="js/cards.js"></script>
+    </footer>
+    <!-- END Footer -->
+</body>
+</html>
